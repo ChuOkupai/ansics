@@ -1,5 +1,15 @@
 # ansics
-ANSI Control sequences macro to use colors and formatting in C
+
+Macros about ANSI escape sequences to control text color and text formatting easily in C.
+
+## How to
+
+Include ansics.h in your c file and link it during compilation.<br />
+Check index.c and test.c for more informations.<br />
+You can compile your own *filename*.c if it is in the same directory by typing in your your terminal :
+```
+make filename
+```
 
 ## License
 
