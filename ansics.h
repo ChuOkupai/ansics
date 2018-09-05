@@ -14,7 +14,7 @@
 #define HIDDEN			4
 #define REVERSE			5
 #define STRIKETHROUGH	6
-#define UNDERLIGNED		7
+#define UNDERLINED		7
 /** COLOR TYPE **/
 #define BACKGROUND		0
 #define FOREGROUND		1
@@ -83,9 +83,9 @@
 #define _ACS_150		"\e[27m"
 #define _ACS_160		"\e[29m"
 #define _ACS_170		"\e[24m"
-#define _ACS_111		"\e[1m"
-#define _ACS_121		"\e[2m"
-#define _ACS_131		"\e[4m"
+#define _ACS_111		"\e[5m"
+#define _ACS_121		"\e[1m"
+#define _ACS_131		"\e[2m"
 #define _ACS_141		"\e[8m"
 #define _ACS_151		"\e[7m"
 #define _ACS_161		"\e[9m"
@@ -95,5 +95,11 @@
 
 /* Macro to use in your code */
 #define ACS(SECTION,TYPE,VALUE) _ACS_CONCAT(SECTION,TYPE,VALUE)
+
+/* Some useful shortcuts */
+#define ACS_RESET			ACS(FORMAT,ALL,RESET)
+#define ACS_BCOLOR(VALUE)	ACS(COLOR,BACKGROUND,VALUE)
+#define ACS_FCOLOR(VALUE)	ACS(COLOR,FOREGROUND,VALUE)
+#define ACS_FORMAT(TYPE)	ACS(FORMAT,TYPE,SET)
 
 #endif /* ansics.h  */
