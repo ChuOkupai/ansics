@@ -1,10 +1,10 @@
 #include <ansics.h>
 #include <stdio.h>
 
-#define _BC(VALUE)	ACS_BCOLOR(VALUE)
-#define _FC(VALUE)	ACS_FCOLOR(VALUE)
-#define _F(VALUE)	ACS_FORMAT(VALUE)
-#define _R 			ACS_RESET"\n"
+#define _BC(V)	ACS_BC(V)
+#define _FC(V)	ACS_FC(V)
+#define _F(V)	ACS_F(V)
+#define _R 		ACS_R"\n"
 
 int main(void)
 {
